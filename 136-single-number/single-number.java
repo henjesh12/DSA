@@ -1,25 +1,10 @@
 class Solution {
     public int singleNumber(int[] nums) {
-          int result=0;
-       for(int i:nums){
-        result =result^i;
-       }
-          return result;
-                   
-    }        
-}      
+        int ans =0;
+        for(int val:nums){
+            ans ^= val;
 
-          
-
-         
-    
- 
-    
-      
-       
-     
-       
-          
-        
-   
-    
+        }
+        return ans;
+    }
+}
