@@ -1,9 +1,10 @@
 class Solution {
     public int singleNumber(int[] nums) {
-          int result =0;
-          for(int val:nums){
-            result ^=val;
-          }
-          return result;
+        int ans = 0;
+        for(int val: nums){
+            ans= ans^val;
+        }
+
+        return ans;
     }
 }
